@@ -32,7 +32,7 @@
             <form th:action="@{'/update/' + ${user.id}}">
                 <input type="submit" value="Update">
             </form>
-            <form th:action="@{'/delete/' + ${user.id}}" th:method="POST">
+            <form th:action="@{'/delete/' + ${user.id}}" th:method="DELETE">
                 <input type="submit" value="Delete">
             </form>
         </td>

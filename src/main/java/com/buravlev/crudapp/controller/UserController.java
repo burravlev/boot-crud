@@ -44,13 +44,13 @@ public class UserController {
         return "update";
     }
 
-    @PostMapping("update")
+    @PatchMapping("update")
     public String update(User user) {
         userService.update(user);
         return "redirect:/";
     }
 
-    @PostMapping ("delete/{id}")
+    @DeleteMapping ("delete/{id}")
     public String delete(@PathVariable("id") Integer id) {
         userService.delete(id);
         return "redirect:/";

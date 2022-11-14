@@ -9,7 +9,7 @@
     <title th:text="${title}"></title>
 </head>
 <body>
-<form action="#" th:action="@{/update}" th:object="${user}" th:method="POST">
+<form action="#" th:action="@{/update}" th:object="${user}" th:method="PATCH">
     <label for="id">Id</label>
     <input id="id" readonly type="number" th:field="*{id}" th:value="${user.id}">
     <br>
